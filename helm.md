@@ -21,10 +21,8 @@ add helm repo, stable
 
 create rancher namespace
 
-1
-	
-
-kubectl create namespace cattle-system
+</pre></td><td class="rouge-code"><pre> kubectl create namespace cattle-system
+</pre></td></tr>
 
 ssl configuration
 
@@ -32,35 +30,26 @@ user rancher generated (default)
 
 install cert-manager
 
-1
-
 	
 
-kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
+</pre></td><td class="rouge-code"><pre> kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
+</pre></td></tr>
 
 create name-space for cert-manager
 
-1
-
 	
+</pre></td><td class="rouge-code"><pre> kubectl create namespace cert-manager</pre></td></tr>
 
-kubectl create namespace cert-manager
 
 Add the Jetstack Helm repository
 
-1
 
-	
-
- helm repo add jetstack https://charts.jetstack.io
+</pre></td><td class="rouge-code"><pre>  helm repo add jetstack https://charts.jetstack.io </pre></td></tr>
 
 update helm repo
 
-1
+</pre></td><td class="rouge-code"><pre> helm repo update</pre></td></tr>
 
-	
-
-helm repo update
 
 install cert-manager helm chart
 
