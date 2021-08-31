@@ -10,9 +10,9 @@ https://rancher.com/docs/rancher/v2.x/en/installation/install-rancher-on-k8s/#1-
 kubectl
 
 #install helm
-
-
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+<tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+</pre></td></tr></tbody>
 
 add helm repo, stable
 
