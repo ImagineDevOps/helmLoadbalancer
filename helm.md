@@ -1,4 +1,4 @@
-nstall Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check! Join me, it’s easy in this straightforward guide.
+Install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check! Join me, it’s easy in this straightforward guide.
 
 Watch Video
 install
@@ -9,19 +9,14 @@ https://rancher.com/docs/rancher/v2.x/en/installation/install-rancher-on-k8s/#1-
 
 kubectl
 
-install helm
-
-1
+#install helm
 
 
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
 add helm repo, stable
 
-1
-
-
-helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+1 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 
 create rancher namespace
 
